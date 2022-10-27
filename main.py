@@ -18,12 +18,25 @@
 #comando de input
 
 nome = input("Digite seu nome: ")
-idade = int(input("Digite sua idade: "))
+idade = int(input("\nDigite sua idade: "))
+genero = input("\nDigite seu gênero(F para feminino e M para masculino):")
 
-print("Seu nome é:{}".format(nome))
-print("Sua idade é:{}".format(idade))
-
+print("\nSeu nome é:{}".format(nome))
+print("\nSua idade é:{}".format(idade))
+print("\nSeu gênero é:{}".format(genero))
 dobro = idade * 2 
 
-print("O dobro da sua idade é: {}".format(dobro))
+#If e Else
 
+print("\nO dobro da sua idade é: {}".format(dobro))
+
+if idade >= 18:
+  print("\nVocê é maior de idade, já pode beber ou dirigir!")
+else:
+  print("\nVocê é menor de idade, não pode beber ou dirigir!")
+
+if idade >=18 and genero == "M":
+  print("\nVocê deve ir ao serviço militar!")
+else:
+  print("\nVocê não precisa ir ao serviço militar!")
+  
